@@ -1,4 +1,5 @@
 import json from 'rollup-plugin-json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default [
     {
@@ -8,6 +9,7 @@ export default [
             format: 'cjs'
         },
         plugins: [
+            nodeResolve(),
             json({
                 // All JSON files will be parsed by default,
                 // but you can also specifically include/exclude files

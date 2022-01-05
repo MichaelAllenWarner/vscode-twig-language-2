@@ -9,6 +9,11 @@
         "body": "{% $1 %}",
         "description": "{% %}"
     },
+    "apply": {
+        "prefix": "apply",
+        "body": ["{% apply $1 %}", "\t$0", "{% endapply %}"],
+        "description": "The apply tag allows you to apply Twig filters on a block of template data"
+    },
     "autoescape": {
         "prefix": "autoescape",
         "body": ["{% autoescape %}", "\t$1", "{% endautoescape %}"],
@@ -120,8 +125,8 @@
         "description":
             "The if statement in Twig is comparable with the if statements of PHP"
     },
-    "else if": {
-        "prefix": "else if",
+    "elseif": {
+        "prefix": "elseif",
         "body": "{% elseif ${condition} %}",
         "description":
             "The if statement in Twig is comparable with the if statements of PHP"
@@ -170,7 +175,7 @@
         "prefix": "spaceless",
         "body": ["{% spaceless %}", "\t$1", "{% endspaceless %}"],
         "description":
-            "Use the spaceless tag to remove whitespace between HTML tags, not whitespace within HTML tags or whitespace in plain text"
+            "NOTE: {% spaceless %} is deprecated; use spaceless filter instead, like {{ '...'|spaceless }} or {% apply spaceless %}...{% endapply %}.\n\n Use the spaceless tag to remove whitespace between HTML tags, not whitespace within HTML tags or whitespace in plain text"
     },
     "use": {
         "prefix": "use",

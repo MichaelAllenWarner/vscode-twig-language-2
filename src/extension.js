@@ -1,5 +1,5 @@
-import vscode from 'vscode'
-import prettydiff from 'prettydiff'
+const vscode = require('vscode')
+const prettydiff = require('prettydiff')
 import snippetsArr from './hover/filters.json'
 import functionsArr from './hover/functions.json'
 import twigArr from './hover/twig.json'

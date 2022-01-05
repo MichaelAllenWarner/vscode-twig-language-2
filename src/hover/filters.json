@@ -162,6 +162,11 @@
         "body": "sort",
         "description": "filter sorts an array"
     },
+    "spaceless": {
+        "text": "spaceless",
+        "body": "spaceless",
+        "description": "Use the spaceless filter to remove whitespace between HTML tags, not whitespace within HTML tags or whitespace in plain text"
+    },
     "split": {
         "prefix": "split",
         "body": "split('$1')",
